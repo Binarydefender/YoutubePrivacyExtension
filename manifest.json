@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Details Hider",
+    "version": "1.0",
+    "description": "Hides YouTube page details when video is playing",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {},
+    "host_permissions": [
+      "*://www.youtube.com/*"
+    ]
+  }
